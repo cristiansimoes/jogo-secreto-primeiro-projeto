@@ -5,7 +5,7 @@
 //paragrafo.innerHTML = 'Escolha um número entre 1 e 10';
     
 let listaDeNumerosSorteados = [];
-let numeroLimite = 10;
+let numeroLimite = 100;
 let numeroSecreto = gerarNumeroAleatorio(); //Aqui chama a função
 let tentativas = 1;
 
@@ -17,12 +17,12 @@ function exibirTextoNaTela(tag,texto){
 
 function exibirMensagemInicial (){
     exibirTextoNaTela('h1','Jogo do Número Secreto');
-    exibirTextoNaTela('p','Escolha um número entre 1 e 10');
+    exibirTextoNaTela('p','Escolha um número entre 1 e 100');
 }
 
 exibirMensagemInicial();
 exibirTextoNaTela('h1','Jogo do Número Secreto'); // Primeira vez que chamar a função, tudo que tiver tag será subts por h1
-exibirTextoNaTela('p','Escolha um número entre 1 e 10'); // Segunda vez que chamar a função, tudo que tiver tag será subts por p
+exibirTextoNaTela('p','Escolha um número entre 1 e 100'); // Segunda vez que chamar a função, tudo que tiver tag será subts por p
 
 //Ao clique precisa acontecer uma funcionalidade, então precisamos criar uma function. Funtion trecho de código responsável por algo.
 
